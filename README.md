@@ -18,7 +18,7 @@ Built with vanilla HTML, CSS, and GSAP ScrollTrigger.
 - GSAP 3 + ScrollTrigger
 
 ## 🌐 Live Project
-[View Project](https://raman12082005.github.io/miniProject_04-Game_Of_Thrones/)
+[clik here to view Output](https://raman12082005.github.io/miniProject_04-Game_Of_Thrones/)
 
 
 ## Preview
