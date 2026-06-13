@@ -17,10 +17,8 @@ Built with vanilla HTML, CSS, and GSAP ScrollTrigger.
 - Vanilla JavaScript
 - GSAP 3 + ScrollTrigger
 
-## Getting Started
-
-Clone the repo and open `index.html` in a browser.
-No build step required.
+## 🌐 Live Project
+[View Project](https://your-link.com)
 
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
