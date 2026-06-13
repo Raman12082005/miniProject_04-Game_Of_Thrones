@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game of Thrones</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Loading overlay ── -->
+  <div class="got-loading" id="loading">
+    <div class="got-loading-logo">Game of Thrones</div>
+    <div class="got-loading-sub">The Chronicles of Westeros</div>
+    <div class="got-loading-bar-wrap">
+      <div class="got-loading-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- ── HERO: scroll container ── -->
+  <div class="got-container" id="gotContainer">
+    <div class="got-sticky" id="gotSticky">
+
+      <video class="got-video" id="gotVideo" src="video/one_scrub.mp4" playsinline muted preload="auto"></video>
+
+
+      <div class="got-vignette" id="vignette"></div>
+      <div class="got-overlay" id="overlay"></div>
+      <div class="got-grain"></div>
+
+      <!-- Corner ornaments (filled by JS) -->
+      <div class="got-corner got-corner-tl"></div>
+      <div class="got-corner got-corner-tr"></div>
+      <div class="got-corner got-corner-bl"></div>
+      <div class="got-corner got-corner-br"></div>
+
+      <!-- Nav -->
+      <nav class="got-nav">
+        <div class="got-nav-logo">Game of Thrones</div>
+        <ul class="got-nav-links">
+          <li><a href="#0">The World</a></li>
+          <li><a href="#0">Characters</a></li>
+          <li><a href="#0">Houses</a></li>
+          <li><a href="#0">History</a></li>
+        </ul>
+      </nav>
+
+      <!-- Rune bar (filled by JS) -->
+      <div class="got-rune-bar" id="runeBar"></div>
+
+      <!-- Content -->
+      <div class="got-content">
+        <span class="got-sigil" id="sigil"></span>
+        <div class="got-divider">
+          <div class="got-divider-line"></div>
+          <div class="got-divider-diamond"></div>
+          <div class="got-divider-line right"></div>
+        </div>
+        <span class="got-subtitle" id="subtitle"></span>
+        <h1 class="got-title" id="title"></h1>
+        <p class="got-body" id="body"></p>
+        <div class="got-cta-row">
+          <button class="got-cta-btn">Begin the Journey</button>
+          <button class="got-cta-ghost">Explore the Realm</button>
+        </div>
+      </div>
+
+      <!-- Right panel -->
+      <div class="got-right-panel">
+        <div class="got-chapter-label" id="chapterLabel">01 / 06</div>
+        <div class="got-vert-line"></div>
+        <div class="got-dots" id="dots"></div>
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="got-scroll-hint">
+        <span>Scroll</span>
+        <div class="arrow"></div>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="got-progress-bar-wrap">
+        <div class="got-progress-bar-fill" id="progress"></div>
+      </div>
+
+    </div><!-- /sticky -->
+  </div><!-- /container -->
+
+  <!-- ── SECTION 1: The Great Houses ── -->
+  <section class="section1" id="section1">
+    <div class="section1-bg-texture"></div>
+    <div class="section1-bg-vignette"></div>
+
+    <header class="section1-header">
+      <p class="section1-eyebrow fade-up" id="s1eyebrow">THE GREAT HOUSES OF WESTEROS</p>
+      <div class="header-ornament">
+        <span class="ornament-line"></span>
+        <span class="ornament-rune">✦</span>
+        <span class="ornament-line"></span>
+      </div>
+      <h1 class="section1-title fade-up" id="s1title">
+        The Noble<br /><em>Houses</em>
+      </h1>
+      <p class="section1-subtitle fade-up">
+        Seven kingdoms. Six great houses. One Iron Throne.
+      </p>
+    </header>
+
+    <!-- Houses grid (filled by JS) -->
+    <div class="houses-grid" id="housesGrid"></div>
+
+    <div class="section1-footer-ornament">
+      <span class="footer-line"></span>
+      <span class="footer-sigil">⚔</span>
+      <span class="footer-line"></span>
+    </div>
+  </section>
+
+  <!-- GSAP via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
